@@ -3,9 +3,6 @@
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
   font-family: var(--foreground);
 }
 
@@ -23,4 +20,11 @@
 .listItem {
   padding: 10px;
   border-bottom: 1px solid #ccc;
+}
+
+.footer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
