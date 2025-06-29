@@ -8,5 +8,5 @@ export default function Home() {
     router.push("/todo");
   }, [router]);
 
-  return null;
-}
+  return null
+};

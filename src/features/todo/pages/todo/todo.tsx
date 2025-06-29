@@ -18,6 +18,10 @@ const TodoPageComponent = () => {
           <Link href="/todo/3">Todo 3</Link>
         </li>
       </ul>
+
+      <footer className={styles.footer}>
+        <Link href="/about">About</Link>
+      </footer>
     </main>
   );
 };
