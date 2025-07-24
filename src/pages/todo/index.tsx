@@ -1,4 +1,4 @@
-import { TodoPage } from "@/core/todo/pages/Todo";
+import { TodoPage } from "@/features/todo/pages/Todo";
 
 /** Todo page route. */
 export default function Todo() {

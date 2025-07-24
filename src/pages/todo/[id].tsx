@@ -1,4 +1,4 @@
-import { TodoDetailsPage } from "@/core/todo/pages/TodoDetails";
+import { TodoDetailsPage } from "@/features/todo/pages/TodoDetails";
 
 export default function TodoItem() {
   return <TodoDetailsPage />;
