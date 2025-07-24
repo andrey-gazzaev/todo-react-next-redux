@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/core/themes/globals.css";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +25,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       justifyContent: "center",
       padding: "16px",
     }}>
-    <Component
-      {...pageProps}
-      className={`${geistSans.variable} ${geistMono.variable}`}
-      
-    />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Component
+          {...pageProps}
+          className={`${geistSans.variable} ${geistMono.variable}`}
+        />
+      </Suspense>
     </div>
   );
 }
