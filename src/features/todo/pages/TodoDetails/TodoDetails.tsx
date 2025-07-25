@@ -16,5 +16,7 @@ const TodoDetailsPageComponent = ({ task }: Props) => {
   );
 };
 
+TodoDetailsPageComponent.displayName = "TodoDetailsPage";
+
 /** Todo details page component. Display a todo item details. */
 export const TodoDetailsPage = memo(TodoDetailsPageComponent);

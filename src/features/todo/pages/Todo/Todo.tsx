@@ -20,5 +20,7 @@ const TodoPageComponent = ({ tasks }: Props) => {
   );
 };
 
+TodoPageComponent.displayName = "TodoPage";
+
 /** Todo page component. Display a list of todos. */
 export const TodoPage = memo(TodoPageComponent);
