@@ -8,11 +8,11 @@ type Props = Readonly<{
 
 const TodoDetailsPageComponent = ({ task }: Props) => {
   return (
-    <main>
-      <h1>Todo Details</h1>
+    <section>
+      <h2>Todo Details</h2>
       <p>Todo ID: {task.id}</p>
       <Link href="/todo">Back to Todo</Link>
-    </main>
+    </section>
   );
 };
 
